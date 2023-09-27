@@ -20,7 +20,7 @@ export default function RecipeTable({ recipe = [], setRecipe }: IProps) {
           <div className="w-1/5 p-2"></div>
           <div className="w-1/5 p-2"></div>
         </div>
-        <Reorder.Group axys="y" values={recipe} onReorder={setRecipe}>
+        <Reorder.Group values={recipe} onReorder={setRecipe}>
           {recipe &&
             recipe.map((item: IRecipe) => {
               return (
