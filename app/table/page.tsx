@@ -1,15 +1,9 @@
 "use client";
 
 import React, { Suspense, useState } from "react";
-import { Metadata } from "next/types";
 import { IRecipe } from "@/interface";
 import RecipeTable from "@/components/RecipeTable/RecipeTable";
 import ClientOnly from "@/components/ClientOnly/ClientOnly";
-
-export const metadata: Metadata = {
-  title: "Table page",
-  description: "DragAndDrop table row",
-};
 
 const defaultRecipe: IRecipe[] = [
   {
